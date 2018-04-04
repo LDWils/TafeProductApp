@@ -37,6 +37,7 @@ namespace ProductApps
                 //added code
                 txtFinalCharge.Text = Convert.ToString(cProduct.TotalPayment + 25);
                 txtWrapCost.Text = Convert.ToString(cProduct.TotalPayment + 25 + 5);
+                txtGST.Text = Convert.ToString(Convert.ToDouble(cProduct.TotalPayment + 25 + 5) * 1.1);
             }
             catch (FormatException)
             {
